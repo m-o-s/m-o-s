@@ -11,6 +11,7 @@ Plug 'suan/vim-instant-markdown'
 Plug 'altercation/vim-colors-solarized'
 Plug 'morhetz/gruvbox'
 Plug 'tomasr/molokai'
+Plug 'tpope/vim-vividchalk'
 call plug#end()
 
 set number
@@ -20,7 +21,7 @@ set tabstop=2
 set incsearch
 syntax enable
 filetype plugin on
-colorscheme industry 
+colorscheme vividchalk
 let g:instant_markdown_autostart = 0
 "set background=dark
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
