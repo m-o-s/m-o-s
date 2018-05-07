@@ -1,6 +1,6 @@
-call plug#begin('~/.vim/plugged')
+all plug#begin('~/.vim/plugged')
 
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'  }
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'   }
 Plug 'godlygeek/tabular'
 "Plug 'tpope/vim-markdown'
 Plug 'jiangmiao/auto-pairs'
@@ -12,6 +12,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'morhetz/gruvbox'
 Plug 'tomasr/molokai'
 Plug 'tpope/vim-vividchalk'
+Plug 'szw/vim-g'
 call plug#end()
 
 set number
@@ -24,8 +25,9 @@ filetype plugin on
 colorscheme vividchalk
 let g:instant_markdown_autostart = 0
 "set background=dark
+set clipboard=unnamedplus
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 "mappings
 
 map <C-n> :NERDTreeToggle<CR>
-
+map <F2> "+y
